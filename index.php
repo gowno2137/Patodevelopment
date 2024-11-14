@@ -8,6 +8,12 @@
 </head>
 <body>
     <header><h1>Patodevelopment</h1></header>
-    <nav><a href="index.php">Strona główna</a><a href="loteria.php">Loteria</a><a href="kontakt.php">Kontakt</a><a href="opinie.php">Opinie</a><a href="kupMieszkanie.php">Kup mieszkanie</a></nav>
+    <nav>
+        <a href="index.php">Strona główna</a>
+        <a href="loteria.php">Loteria</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a href="opinie.php">Opinie</a>
+        <a href="kupMieszkanie.php">Kup mieszkanie</a>
+    </nav>
 </body>
 </html>
