@@ -7,7 +7,14 @@
     <title>kontakt</title>
 </head>
 <body>
-    <h1>Dane do pozwu</h1>
+<header><h1>Dane do pozwu</h1></header>
+<nav>
+        <a href="index.php">Strona główna</a>
+        <a href="loteria.php">Loteria</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a href="opinie.php">Opinie</a>
+        <a href="kupMieszkanie.php">Kup mieszkanie</a>
+    </nav>
     <p>Nazwa firmy: Patodevelopment</p>
     <p>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</p>
     <p>Zarząd: Partyk, Anthony, Żydmon</p>
