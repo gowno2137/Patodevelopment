@@ -6,6 +6,6 @@
     <title>Wygrana</title>
 </head>
 <body>
-    <h1 style="font: size 400px;">MEGA BIG WIN</h1>
+    <h1>MEGA BIG WIN</h1>
 </body>
 </html>
