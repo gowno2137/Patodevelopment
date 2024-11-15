@@ -22,7 +22,7 @@
         // echo $losowe;
         if ($losowe == rand(1,100)) {
             echo "wygrałeś, aby wygrać nagrode naciśnij przycisk";
-            echo '<input type="submit" value="odbierz nagrode" name="odbierz nagrode">';
+            echo '<a href="google.com">odbierz wygrana<a>';
         }
         else{
             echo "przegrałeś, może następnym razem się uda";
