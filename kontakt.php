@@ -20,7 +20,7 @@
     <p>Zarząd: Partyk, Anthony, Żydmon</p>
     <p>NIP: 6263045919</p>
     <p>Regon: 520679377</p>
-    <a href="mailto: patodevelopment@hazard.com">patodevelopment@gowno.com</a><br>
+    <a href="mailto: patodevelopment@gowno.com">patodevelopment@gowno.com</a><br>
     <a href="tel:+48213769420">+48 213 769 420</a>
 </body>
 </html>
