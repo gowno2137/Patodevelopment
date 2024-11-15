@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="styleOpinie.css">
 </head>
 <body>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Patodeveloperka</a>
@@ -32,6 +37,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="kupMieszkanie.php">Kup mieszkanie</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" aria-current="page">Kup dom</a>
+            </li>
         </ul>
         </div>
     </div>
@@ -46,21 +54,33 @@
             Dodaj opinię
         </button>
     </div>
-    <?php
-    $db_id = mysqli_connect("localhost", "root", "", "patodevelopment");
-    $result = mysqli_query($db_id, "SELECT user, text, rating FROM opinie");
+    <div class="overflow-y-auto">
+        <?php
+        $db_id = mysqli_connect("localhost", "root", "", "patodevelopment");
+        $result = mysqli_query($db_id, "SELECT user, text, rating FROM opinie");
 
-    while ($row=$result->fetch_assoc()) {
-        echo $row["user"], $row["rating"], $row["text"];
-    }
-    ?>
-    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+        while ($row=$result->fetch_assoc()) {
+            echo $row["user"], $row["rating"], $row["text"];
+        }
+        ?>
+    </div>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkLabel">Dodawanie opinii</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            
+            <form method="post">
+                <div class="input-group mb-3">
+                    <input class="form-control" type="text" placeholder="Imię/Nick" aria-label="default input">
+                </div>
+                <div class="input-group mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Treść"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <input class="btn btn-primary" type="submit">
+                </div>
+            </form>
         </div>
     </div>
 </body>
