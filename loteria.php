@@ -24,7 +24,7 @@
         // echo $losowe;
         if ($losowe == rand(1,10)) {
             echo "wygrałeś, aby wygrać nagrode naciśnij przycisk";
-            echo '<a href="google.com">odbierz wygrana<a>';
+            echo '<a href="wygrana.php">odbierz wygrana<a>';
         }
         else{
             echo "przegrałeś, może następnym razem się uda";
