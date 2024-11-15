@@ -20,9 +20,9 @@
     </form>
     <?php
     if(isset($_POST["wez"])){
-        $losowe =  rand(1,100);
+        $losowe =  rand(1,10);
         // echo $losowe;
-        if ($losowe == rand(1,100)) {
+        if ($losowe == rand(1,10)) {
             echo "wygrałeś, aby wygrać nagrode naciśnij przycisk";
             echo '<a href="google.com">odbierz wygrana<a>';
         }
