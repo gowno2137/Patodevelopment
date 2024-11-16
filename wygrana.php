@@ -10,5 +10,6 @@
 <body>
     <header><h1>MEGA BIG WIN</h1></header>
     <p>Witaj użytkowniku! Właśnie wygrałeś loterię! Aby odebrać wygraną zgłoś się do nas! Wszystko masz w zakładce <b>kontakt</b></p>
+    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
 </body>
 </html>
