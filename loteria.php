@@ -47,7 +47,7 @@
             const intervalTime = 100;
             let animationCount = 0;
             const maxAnimations = 20;
-            const finalOutcome = Math.random() < 0.01 ? "Wygrałeś" : "Przegrałeś"; // 1% chance to win
+            const finalOutcome = Math.random() < 0.1 ? "Wygrałeś" : "Przegrałeś"; // 10% szans ze wygrasz
 
             resultDiv.innerText = "";
             resultDiv.classList.remove("winning", "losing");
