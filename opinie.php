@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleOpinie.css">
-    <script src="opinie.js"></script>
+    <!-- <script src="opinie.js"></script> -->
 </head>
 <body>
     <style>
@@ -20,10 +20,6 @@
         .star:hover ~ .star.selected {
             color: gold;
         }
-
-        /* .star:hover ~ .star {
-            color: gold; /* Pozwala utrzymać wcześniejsze zaznaczenie 
-        } */
     </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
@@ -83,33 +79,78 @@
         <div class="offcanvas-body">
             <form method="post">
                 <div class="input-group mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="star" class="bi bi-star-fill" viewBox="0 0 16 16" data-value="1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="star bi bi-star-fill" viewBox="0 0 16 16" data-value="1">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="star" class="bi bi-star-fill" viewBox="0 0 16 16" data-value="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="star bi bi-star-fill" viewBox="0 0 16 16" data-value="2">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="star" class=" bi bi-star-fill" viewBox="0 0 16 16" data-value="3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="star bi bi-star-fill" viewBox="0 0 16 16" data-value="3">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="star" class="bi bi-star-fill" viewBox="0 0 16 16" data-value="4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="star bi bi-star-fill" viewBox="0 0 16 16" data-value="4">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="star" class="bi bi-star-fill" viewBox="0 0 16 16" data-value="5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="star bi bi-star-fill" viewBox="0 0 16 16" data-value="5">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
                 </div>
                 <div class="input-group mb-3">
-                    <input class="form-control" type="text" placeholder="Imię/Nick" aria-label="default input">
+                    <input class="form-control" type="text" placeholder="Imię/Nick" aria-label="default input" name="name">
                 </div>
                 <div class="input-group mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Treść"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Treść" name="text"></textarea>
                 </div>
                 <div class="input-group mb-3">
+                    <input type="hidden" name="rating" id="rating-input" value="">
                     <input class="btn btn-primary" type="submit">
                 </div>
             </form>
         </div>
     </div>
+    <?php
+    if (!empty($_POST["name"]) && !empty($_POST["text"]) && !empty($_POST["rating"])) {
+        $name = $_POST["name"];
+        $text = $_POST["text"];
+        $rating = $_POST["rating"];
+
+        $sql = "INSERT INTO opinie (user, text, rating) VALUES ('$name', '$text', '$rating')";
+        mysqli_query($db_id, $sql);
+    }
+    mysqli_close($db_id);
+    ?>
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('rating-input');
+        
+        stars.forEach((star, index) => {
+            star.addEventListener('mouseover', () => {
+                highlightStars(index);
+            });
+
+            star.addEventListener('click', () => {
+                resetStars();
+                highlightStars(index, true);
+                const value = star.getAttribute('data-value');
+                ratingInput.value = value;
+            });
+
+            star.addEventListener('mouseout', () => {
+                if (!ratingInput.value) resetStars(); 
+            });
+        });
+
+        function highlightStars(index, permanent = false) {
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add(permanent ? 'selected' : 'hover');
+            }
+        }
+
+        function resetStars() {
+            stars.forEach(star => {
+                star.classList.remove('selected', 'hover');
+            });
+        }
+    </script>
 </body>
 </html>
