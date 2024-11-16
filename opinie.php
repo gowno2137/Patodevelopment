@@ -20,6 +20,14 @@
         .star:hover ~ .star.selected {
             color: gold;
         }
+        .stars{
+            font-size: 32px;
+            color: gold;
+        }
+        .blankstars{
+            font-size: 32px;
+            color: grey;
+        }
     </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
@@ -61,13 +69,16 @@
             Dodaj opinię
         </button>
     </div>
-    <div class="overflow-y-auto">
+    <div class="overflow-y-auto text-center">
         <?php
         $db_id = mysqli_connect("localhost", "root", "", "patodevelopment");
         $result = mysqli_query($db_id, "SELECT user, text, rating FROM opinie");
 
         while ($row=$result->fetch_assoc()) {
-            echo $row["user"], $row["rating"], $row["text"];
+            $stars = str_repeat('&#9733;', intval($row["rating"]));
+            $blankstars = str_repeat('&#9733;', intval(5-$row["rating"]));
+            echo "<div class='mt-4'>".$row['user']."</div>";
+            echo "<div class='review'><div class='mb-2'><label class='stars'>$stars</label><label class='blankstars'>$blankstars</label></div></div>";
         }
         ?>
     </div>
@@ -96,10 +107,10 @@
                     </svg>
                 </div>
                 <div class="input-group mb-3">
-                    <input class="form-control" type="text" placeholder="Imię/Nick" aria-label="default input" name="name">
+                    <input class="form-control" type="text" placeholder="Imię/Nick" aria-label="default input" name="name" required>
                 </div>
                 <div class="input-group mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Treść" name="text"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Treść" name="text" required></textarea>
                 </div>
                 <div class="input-group mb-3">
                     <input type="hidden" name="rating" id="rating-input" value="">
