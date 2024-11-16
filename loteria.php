@@ -44,16 +44,14 @@
         document.getElementById("startLottery").addEventListener("click", function () {
             const resultDiv = document.getElementById("result");
             const outcomes = ["Przegrałeś", "Wygrałeś"];
-            const intervalTime = 100; // Time for each animation step in ms
+            const intervalTime = 100;
             let animationCount = 0;
-            const maxAnimations = 20; // Number of total animations before result
+            const maxAnimations = 20;
             const finalOutcome = Math.random() < 0.01 ? "Wygrałeś" : "Przegrałeś"; // 1% chance to win
 
-            // Clear previous result
             resultDiv.innerText = "";
             resultDiv.classList.remove("winning", "losing");
 
-            // Start animation
             const interval = setInterval(() => {
                 const randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
                 resultDiv.innerText = randomOutcome;
@@ -62,11 +60,9 @@
                 animationCount++;
                 if (animationCount >= maxAnimations) {
                     clearInterval(interval);
-                    // Display final outcome
                     resultDiv.innerText = finalOutcome;
                     resultDiv.className = finalOutcome === "Wygrałeś" ? "winning" : "losing";
 
-                    // Add additional content for winning
                     if (finalOutcome === "Wygrałeś") {
                         resultDiv.innerHTML += `
                             <p>Aby odebrać nagrodę, kliknij przycisk poniżej.</p>
