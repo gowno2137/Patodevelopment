@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="oco()">
     <header class="text-center my-4">
         <h1>Loteria Lootbox</h1>
     </header>
@@ -34,7 +34,9 @@
         <a href="kupMieszkanie.php" class="mx-2">Kup mieszkanie</a>
     </nav>
     <div class="text-center">
-        <button id="startLottery" class="btn btn-primary">Weź udział</button>
+        <button id="startLottery" class="btn btn-primary" onclick="">Weź udział</button>
+        <h3>Co losujemy?</h3>
+        <h3 id="oco"></h3>
         <div id="result"></div>
     </div>
 
@@ -74,6 +76,42 @@
                 }
             }, intervalTime);
         });
+
+
+    function oco(){
+        let oco = Math.floor(Math.random() * 10) + 1;
+        if (oco == 1) {
+            document.getElementById("oco").innerHTML = "mieszkanie";
+        }
+        else if (oco == 2) {
+            document.getElementById("oco").innerHTML = "dom";
+        }
+        else if (oco == 3) {
+            document.getElementById("oco").innerHTML = "dom na terenie zalewowym";
+        }
+        else if (oco == 4) {
+            document.getElementById("oco").innerHTML = "pół mieszkania";
+        }
+        else if (oco == 5) {
+            document.getElementById("oco").innerHTML = "działka 1mx1m";
+        }
+        else if (oco == 6) {
+            document.getElementById("oco").innerHTML = "miejsce na trumne";
+        }
+        else if (oco == 7) {
+            document.getElementById("oco").innerHTML = "prywatny czarny";
+        }
+        else if (oco == 8) {
+            document.getElementById("oco").innerHTML = "pokój bez okien";
+        }
+        else if (oco == 9) {
+            document.getElementById("oco").innerHTML = "drzwi";
+        }
+        else{
+            document.getElementById("oco").innerHTML = "nic";
+        }
+        
+    }
     </script>
 </body>
 </html>
