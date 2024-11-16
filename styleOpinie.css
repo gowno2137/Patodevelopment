@@ -1,0 +1,9 @@
+#star:hover,
+#star:hover ~ .star {
+    color: gold;
+}
+
+/* Gwiazdki wybrane na stałe */
+#star.selected {
+    color: gold;
+}
