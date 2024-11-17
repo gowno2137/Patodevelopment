@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleOpinie.css">
-    <!-- <script src="opinie.js"></script> -->
 </head>
 <body>
     <style>
@@ -57,13 +56,13 @@
                 <a class="nav-link" href="kupMieszkanie.php">Kup mieszkanie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" aria-current="page">Kup dom</a>
+                <a class="nav-link" href="#">Kup dom</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
-    <div class="d-flex justify-content-around align-items-center">
+    <div class="p-2 d-flex justify-content-around align-items-center">
         <h1>Opinie</h1>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
