@@ -44,7 +44,7 @@
         </div>
     </div>
     </nav>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide h-25 w-25" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -59,10 +59,10 @@
               </div>
             </div>
             <div class="carousel-item">
-            <img src="l2.jpg" class="d-block" alt="...">
+            <img src="l2.jpg" class="d-block" alt="..." height="100px" width="100px">
             </div>
             <div class="carousel-item">
-            <img src="l4.jpg" class="d-block" alt="...">
+            <img src="l4.jpg" class="d-block" alt="..." height="100px" width="100px">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
