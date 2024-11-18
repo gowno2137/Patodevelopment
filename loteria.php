@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +23,39 @@
     </style>
 </head>
 <body onload="oco()">
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">Patodeveloperka</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.php">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="loteria.php" aria-current="page">Loteria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontakt.php">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="opinie.php">Opinie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kupMieszkanie.php">Kup mieszkanie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kup dom</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
     <header class="text-center my-4">
         <h1>Loteria Lootbox</h1>
     </header>
-    <nav class="text-center mb-4">
-        <a href="index.php" class="mx-2">Strona główna</a>
-        <a href="loteria.php" class="mx-2">Loteria</a>
-        <a href="kontakt.php" class="mx-2">Kontakt</a>
-        <a href="opinie.php" class="mx-2">Opinie</a>
-        <a href="kupMieszkanie.php" class="mx-2">Kup mieszkanie</a>
-    </nav>
     <div class="text-center">
         <button id="startLottery" class="btn btn-primary" onclick="">Weź udział</button>
         <h3>Co losujemy?</h3>
@@ -47,7 +70,7 @@
             const intervalTime = 100;
             let animationCount = 0;
             const maxAnimations = 20;
-            const finalOutcome = Math.random() < 0.1 ? "Wygrałeś" : "Przegrałeś"; // 10% szans ze wygrasz
+            const finalOutcome = Math.random() < 0.9 ? "Wygrałeś" : "Przegrałeś"; // 10% szans ze wygrasz
 
             resultDiv.innerText = "";
             resultDiv.classList.remove("winning", "losing");

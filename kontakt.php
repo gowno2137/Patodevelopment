@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-<header><h1>Dane do pozwu</h1></header>
-<nav>
-        <a href="index.php">Strona główna</a>
-        <a href="loteria.php">Loteria</a>
-        <a href="kontakt.php">Kontakt</a>
-        <a href="opinie.php">Opinie</a>
-        <a href="kupMieszkanie.php">Kup mieszkanie</a>
+
+<nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">Patodeveloperka</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.php">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loteria.php">Loteria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="kontakt.php" aria-current="page">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="opinie.php">Opinie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kupMieszkanie.php">Kup mieszkanie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kup dom</a>
+            </li>
+        </ul>
+        </div>
+    </div>
     </nav>
+    <header><h1>Dane do pozwu</h1></header>
     <p>Nazwa firmy: Patodevelopment</p>
     <p>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</p>
     <p>Zarząd: Partyk, Anthony, Żydmon</p>
