@@ -39,15 +39,15 @@
         </div>
     </div>
     </nav>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active h-10" data-bs-interval="500">
             <img src="l1.jpg" class="d-block w-30" alt="...">
             </div>
-            <div class="carousel-item">
-            <img src="l1.jpg" class="d-block w-30" alt="...">
+            <div class="carousel-item" data-bs-interval="500">
+            <img src="..." class="d-block w-30" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="500">
             <img src="l1.jpg" class="d-block w-30" alt="...">
             </div>
         </div>
