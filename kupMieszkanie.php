@@ -38,5 +38,7 @@
         </div>
     </div>
     </nav>
+    <h1>Kup Mieszkanie!</h1>
+    <h2>Tanio! Dogodne lokalizacje</h2>
 </body>
 </html>
