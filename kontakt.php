@@ -7,6 +7,12 @@
     <title>kontakt</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        a{
+        text-decoration:none;
+        color:white;
+        }
+    </style>
 </head>
 <body>
 
@@ -41,12 +47,14 @@
     </div>
     </nav>
     <header><h1>Dane do pozwu</h1></header>
-    <p>Nazwa firmy: Patodevelopment</p>
-    <p>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</p>
-    <p>Zarząd: Partyk, Anthony, Żydmon</p>
-    <p>NIP: 6263045919</p>
-    <p>Regon: 520679377</p>
-    <a href="mailto: patodevelopment@gowno.com">patodevelopment@gowno.com</a><br>
-    <a href="tel:+48213769420">+48 213 769 420</a>
+    <div class="shadow p-3 bg-body-tertiary rounded text-center">
+        <h3>Nazwa firmy: Patodevelopment</h3>
+        <h3>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</h3>
+        <h3>Zarząd: Partyk, Anthony, Żydmon</h3>
+        <h3>NIP: 6263045919</h3>
+        <h3>Regon: 520679377</h3>
+        <a href="mailto: patodevelopment@gowno.com">patodevelopment@gowno.com</a><br>
+        <a href="tel:+48213769420">+48 213 769 420</a>
+    </div>
 </body>
 </html>
