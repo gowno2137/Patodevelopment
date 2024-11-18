@@ -9,6 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Patodeveloperka</a>
@@ -40,15 +45,24 @@
     </div>
     </nav>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="l1.jpg" class="d-block w-30" alt="...">
+            <img src="l1.jpg" class="d-block" alt="..." width="100%" height="50%">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
             </div>
             <div class="carousel-item">
-            <img src="l1.jpg" class="d-block w-30" alt="...">
+            <img src="l2.jpg" class="d-block" alt="..." width="100%" height="80%">
             </div>
             <div class="carousel-item">
-            <img src="l1.jpg" class="d-block w-30" alt="...">
+            <img src="l4.jpg" class="d-block" alt="..." width="100%" height="80%">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
