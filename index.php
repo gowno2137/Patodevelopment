@@ -50,28 +50,28 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Pierwszy slajd"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Drugi slajd"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Trzeci slajd"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1">
+            <div class="carousel-item active">
                 <img src="l1.jpg" class="d-block" alt="Pierwszy obraz">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nowoczesne apartamenty</h5>
                     <p>Styl i komfort w sercu miasta.</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="1">
+            <div class="carousel-item">
                 <img src="l2.jpg" class="d-block" alt="Drugi obraz">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Przytulne przestrzenie</h5>
                     <p>Doskonałe miejsce do życia i relaksu.</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="1">
+            <div class="carousel-item">
                 <img src="l4.jpg" class="d-block" alt="Trzeci obraz">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Twój wymarzony dom</h5>
