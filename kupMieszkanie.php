@@ -40,5 +40,7 @@
     </nav>
     <h1>Kup Mieszkanie!</h1>
     <h2>Tanio! Dogodne lokalizacje</h2>
+    <h1>kiedy cena jest za mała groborzowi staje pała</h1>
+    <h2>groborz to cimny goźć</h2>
 </body>
 </html>
