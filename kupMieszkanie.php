@@ -42,5 +42,10 @@
     <h2>Tanio! Dogodne lokalizacje</h2>
     <h1>kiedy cena jest za mała groborzowi staje pała</h1>
     <h2>groborz to cimny goźć</h2>
+    <select name="gowno" id="">
+        <option value="tak">łaziska górne</option>
+        <option value="marcin podgórski">nie ma sensu odpalac lawa</option>
+    </select>
+    <img src="l1.jpg" alt="">
 </body>
 </html>
