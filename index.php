@@ -62,6 +62,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nowoczesne apartamenty</h5>
                     <p>Styl i komfort w sercu miasta.</p>
+                    <button type="button" class="btn btn-warning">Kup dzielnice za jedyne 195.000zł</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -69,6 +70,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Przytulne przestrzenie</h5>
                     <p>Doskonałe miejsce do życia i relaksu.</p>
+                    <button type="button" class="btn btn-warning">jedno mieszkanie 1m^2 za 250.000zł</button>
                 </div>
             </div>
             <div class="carousel-item">
