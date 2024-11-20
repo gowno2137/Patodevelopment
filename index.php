@@ -91,5 +91,7 @@
         </button>
     </div>
     <div class="text-center m-3"><h1>Zamów swoje nowe wymarzone mieszkanie z dostawą pod drzwi</h1><button class="btn btn-primary">Kup mieszkanie -10%</button></div>
+    
+    <div class="informacje"><h5>Najnowsze informacje</h5><br><p>Sprzedaliśmy cały blok milionerowi za 5 milionów złotych</p></div>
 </body>
 </html>
