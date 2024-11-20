@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    /* height: ; */
+    z-index: 1;
+}
+.test{
+    /* text-align: center; */
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    /* justify-content: center; */
+}
+.text{
+    text-align: center;
+    margin-top: 10%;
+}
