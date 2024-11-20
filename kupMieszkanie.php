@@ -46,7 +46,7 @@
                 <h2>Tanio! Dogodne lokalizacje</h2>
             </div>
         </div>
-        <img src="l3.jpg" alt="">
+        <img src="l5.jpg" alt="">
     </div>
 </body>
 </html>
