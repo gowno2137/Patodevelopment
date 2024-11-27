@@ -41,7 +41,7 @@
     </nav>
     <div class="main">
         <div class="test">
-            <div class="text">
+            <div class="text badge text-bg-secondary">
                 <h1>Kup Mieszkanie!</h1>
                 <h2>Tanio! Dogodne lokalizacje</h2>
             </div>

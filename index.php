@@ -97,5 +97,6 @@
     <br><p>Kupiliśmy nową kamiennice w lipinach(nowe mieszkania nadchodzą)</p>
     <br><p>Wyprzedarz domów na terenach zalewowych!!!</p>
     </div>
+    <img src="Patodevelopment1.png" alt="pato">
 </body>
 </html>
