@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="styleMieszkanie.css">
 </head>
 <body>
+    <style>
+        .wybierz{
+            width: 49%;
+        }
+        .right, .left{
+            width:
+        }
+    </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Patodeveloperka</a>
@@ -41,13 +49,14 @@
     </nav>
     <div class="main">
         <div class="test">
-            <div class="text badge text-bg-secondary">
+            <div class="text text-bg-secondary">
                 <h1>Kup Mieszkanie!</h1>
                 <h2>Tanio! Dogodne lokalizacje</h2>
             </div><br>
-        <div><h2 class="text badge text-bg-secondary w-25 float-left">Kup mieszkanie</h2></div>
-        <div></div>
-        <h2 class="text badge text-bg-secondary w-25 float-left">Kreator mieszkań</h2>
+            <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" style="height:200px; font-size:100px;"> Kup gotowca</button>
+  <button class="btn btn-primary" type="button" style="height:200px;">Stwórz własne mieszkanie</button>
+</div>
         </div>
         <img src="l5.jpg" alt="">
     </div>
