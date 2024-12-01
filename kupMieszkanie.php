@@ -33,7 +33,7 @@
                 <a class="nav-link active" href="kupMieszkanie.php" aria-current="page">Kup mieszkanie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kup dom</a>
+                <a class="nav-link" href="kupDom.html">Kup dom</a>
             </li>
         </ul>
         </div>

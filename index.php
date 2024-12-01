@@ -45,7 +45,7 @@
                     <li class="nav-item"><a class="nav-link" href="kontakt.php">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="opinie.php">Opinie</a></li>
                     <li class="nav-item"><a class="nav-link" href="kupMieszkanie.php">Kup mieszkanie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kup dom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kupDom.html">Kup dom</a></li>
                 </ul>
             </div>
         </div>
