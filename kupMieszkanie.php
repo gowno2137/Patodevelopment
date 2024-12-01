@@ -44,7 +44,10 @@
             <div class="text badge text-bg-secondary">
                 <h1>Kup Mieszkanie!</h1>
                 <h2>Tanio! Dogodne lokalizacje</h2>
-            </div>
+            </div><br>
+        <div><h2 class="text badge text-bg-secondary w-25 float-left">Kup mieszkanie</h2></div>
+        <div></div>
+        <h2 class="text badge text-bg-secondary w-25 float-left">Kreator mieszkań</h2>
         </div>
         <img src="l5.jpg" alt="">
     </div>
