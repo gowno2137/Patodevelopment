@@ -11,11 +11,21 @@
 </head>
 <body>
     <style>
-        .wybierz{
-            width: 49%;
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .right, .left{
-            width:
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn-hidden {
+            transform: translateY(100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .card-hover:hover .btn-hidden {
+            transform: translateY(0);
+            opacity: 1;
         }
     </style>
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -48,33 +58,55 @@
         </div>
     </div>
     </nav>
-    <div class="main">
-        <div class="test">
-            <div class="text badge text-bg-secondary">
-                <h1>Kup Mieszkanie!</h1>
-                <h2>Tanio! Dogodne lokalizacje</h2>
-            </div><br>
-            
-            <div class="button1"><button type="button" class="btn btn-secondary">Kreator mieszkania</button></div>
-            <script> 
-                $(document).ready(function(){
-                $("button").click(function(){
-                    $(".button1").animate({
-                    left: '250px',
-                    height: '500px',
-                    width: '75%'
-                    });
-                });
-                });
-                </script> 
-                </head>
-        
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Wybierz swoją opcję</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-5 mb-4">
+                <div class="card card-hover h-100 shadow">
+                    <img src="l1.jpg" class="card-img-top" alt="Kreator Mieszkania">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kreator Mieszkania</h5>
+                        <p class="card-text text-center">
+                            Zaprojektuj mieszkanie do <b>naszych</b> potrzeb.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center border-top-0">
+                        <button class="btn btn-primary btn-hidden">Wybierz Kreator</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-4">
+                <div class="card card-hover h-100 shadow">
+                    <img src="l2.jpg" class="card-img-top" alt="Gotowe Mieszkanie">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kupienie Gotowego Mieszkania</h5>
+                        <p class="card-text text-center">
+                            Wybierz jedno z naszych gotowych mieszkań i wprowadź się za rok!
+                        </p>
+                    </div>
+                    <div class="card-footer text-center border-top-0">
+                        <button class="btn btn-success btn-hidden">Kup Gotowe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.card-hover').on('click', function () {
+                $(this).find('.btn-hidden').toggleClass('show');
+            });
+        });
+    </script>
 
 
 
 
         </div>
-        <img src="l5.jpg" alt="">
+        <!-- <img src="l5.jpg" alt=""> -->
     </div>
 </body>
 </html>
