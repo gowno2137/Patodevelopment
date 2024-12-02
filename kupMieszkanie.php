@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleMieszkanie.css">
 </head>
@@ -49,14 +50,29 @@
     </nav>
     <div class="main">
         <div class="test">
-            <div class="text text-bg-secondary">
+            <div class="text badge text-bg-secondary">
                 <h1>Kup Mieszkanie!</h1>
                 <h2>Tanio! Dogodne lokalizacje</h2>
             </div><br>
-            <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button" style="height:200px; font-size:100px;"> Kup gotowca</button>
-  <button class="btn btn-primary" type="button" style="height:200px;">Stwórz własne mieszkanie</button>
-</div>
+            
+            <div class="button1"><button type="button" class="btn btn-secondary">Kreator mieszkania</button></div>
+            <script> 
+                $(document).ready(function(){
+                $("button").click(function(){
+                    $(".button1").animate({
+                    left: '250px',
+                    height: '500px',
+                    width: '75%'
+                    });
+                });
+                });
+                </script> 
+                </head>
+        
+
+
+
+
         </div>
         <img src="l5.jpg" alt="">
     </div>
