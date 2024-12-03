@@ -28,6 +28,7 @@
             opacity: 1;
         }
     </style>
+    
     <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Patodeveloperka</a>
@@ -58,6 +59,8 @@
         </div>
     </div>
     </nav>
+
+    
     <div class="container my-5">
         <h1 class="text-center mb-4">Wybierz swoją opcję</h1>
         <div class="row justify-content-center">
@@ -90,6 +93,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container bg-secondary-subtle p-3 rounded-4 text-center fs-5"><h5>Co wybrać?</h5>
+    <br><p>Jeżeli wolisz gotowe miaszkanie i w sumie cie nie obchodzi jak będzie wyglądać twoje mieszkanie to kup gotowca(kosztuje Dużo)</p>
+    <br><p>Jeżeli wolisz własne mieszkanie i jesteś bogaty to wybierz kreator(kosztuje Więcej)</p>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
