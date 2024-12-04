@@ -50,6 +50,7 @@
             </div>
         </div>
     </nav>
+    <marquee behavior="" direction="" scrollamount="50" style="font-size: 50px; color: red;">Kup mieszkanie na Lipinach Kup Lipiny Kup mieszkanie na Lipinach Kup Lipiny Kup mieszkanie na Lipinach Kup Lipiny Kup mieszkanie na Lipinach Kup Lipiny </marquee>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Pierwszy slajd"></button>
