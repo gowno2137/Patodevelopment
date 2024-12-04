@@ -50,7 +50,7 @@
     <div class="shadow p-3 bg-body-tertiary rounded text-center">
         <h3>Nazwa firmy: Patodevelopment</h3>
         <h3>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</h3>
-        <h3>Zarząd: Partyk, Anthony, Żydmon</h3>
+        <h3>Zarząd: Partyk, Anthony, Żymon</h3>
         <h3>NIP: 6263045919</h3>
         <h3>Regon: 520679377</h3>
         <a href="mailto: patodevelopment@gowno.com">patodevelopment@gowno.com</a><br>
