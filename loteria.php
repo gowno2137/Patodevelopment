@@ -132,5 +132,23 @@
         
     }
     </script>
+        <form method="post" class="text-center">
+        Wybierz cyfre od 0-10: <input type="number" name="cyfra" placeholder="cyfra od 0-9" max=10>
+        <input type="submit" value="strzelaj">
+        <?php
+        if(!empty($_POST["cyfra"])){
+        $cyfra = $_POST["cyfra"];
+        $losowa = rand(0,9);
+
+        if($losowa==$cyfra){
+            echo "<h2 style='color:green;'>wygrałeś</h2>";
+        }
+        else{
+            echo "<h2 style='color:red;'>przegrałeś</h2>";
+        }
+    }
+        ?>
+
+    </form>
 </body>
 </html>
