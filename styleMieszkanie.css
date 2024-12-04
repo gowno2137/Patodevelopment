@@ -1,5 +1,6 @@
 body{
     /* overflow: hidden; */
+    
 }
 img{
     width: 100%;
@@ -9,7 +10,7 @@ img{
 .test{
     /* text-align: center; */
     /* z-index: 2; */
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     /* justify-content: center; */
 }
