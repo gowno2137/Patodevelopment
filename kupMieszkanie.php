@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleMieszkanie.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <style>
@@ -50,10 +51,10 @@
                 <a class="nav-link" href="opinie.php">Opinie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="kupMieszkanie.php" aria-current="page">Kup mieszkanie</a>
+                <a class="nav-link active kup" href="kupMieszkanie.php" aria-current="page">Kup mieszkanie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="kupDom.html">Kup dom</a>
+                <a class="nav-link kup" href="kupDom.html">Kup dom</a>
             </li>
         </ul>
         </div>
