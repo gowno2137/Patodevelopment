@@ -24,18 +24,18 @@
         <input class="btn btn-primary" type="submit" value="Zaloguj">
     </form> -->
 
-    <form class="row g-3">
+    <form method="post" class="row g-3">
       <div class="col-md-4">
         <label for="validationDefault01" class="form-label">email</label>
-        <input type="text" class="form-control" id="validationDefault01" required="">
+        <input type="email" class="form-control" id="validationDefault01" name=email required="">
       </div>
       <div class="col-md-4">
         <label for="validationDefault02" class="form-label">hasło</label>
-        <input type="text" class="form-control" id="validationDefault02" required="">
+        <input type="password" class="form-control" id="validationDefault02" name="password" required="">
       </div>
       <div class="col-12">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" name="terms" required="">
           <label class="form-check-label" for="invalidCheck2">
             Akceptuję regulamin firmy patodevelopment
           </label>
@@ -48,5 +48,27 @@
     <script>
 
     </script>
+    <?php
+        session_start();
+
+        $dbid = mysqli_connect("localhost", "root", "", "patodevelopment");
+        if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["terms"])) {
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+
+            $sql = "SELECT * FROM users WHERE email='$email'";
+            $result = mysqli_query($dbid, $sql);
+
+            if (mysqli_num_rows($result) == 1) {
+                $row = mysqli_fetch_assoc($result);
+                if (password_verify($password, $row["password"])) {
+                    $_SESSION["email"] = $email;
+                    echo $_SESSION["url"];
+                    header('Location: '. $_SESSION["url"]);
+                    exit;
+                }
+            }
+        }
+    ?>
 </body>
 </html>
