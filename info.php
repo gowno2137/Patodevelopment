@@ -18,7 +18,28 @@
                     $name = "Kopernikus sala 135";
                     break;
                 case 'krotka':
-                    $name = "krotka";
+                    $name = "Familok Krotka";
+                    break;
+                case 'wieczorka':
+                    $name = "Familok Wieczorka";
+                    break;
+                case 'okrzei':
+                    $name = "Familok Okrzei";
+                    break;
+                case 'szkolny':
+                    $name = "Familok Plac Szkolny";
+                    break;
+                case 'krzywoustego':
+                    $name = "Familok Krzywoustego";
+                    break;
+                case 'baczynskiego':
+                    $name = "Familok Baczynskiego";
+                    break;
+                case 'florianska':
+                    $name = "Familok Florianska";
+                    break;
+                case 'warsztat':
+                    $name = "warsztat";
                     break;
             
                 
@@ -29,7 +50,7 @@
             $sql = mysqli_query($db_id, "SELECT * FROM gotowemieszkania WHERE name = '$name'");
             while ($row=$sql->fetch_assoc()) {
                 echo "<img class='w-50' src='zdj/".$row["photo"].".png'>";
-                echo "<div class=''><h1 class='text-center'>".$row["name"]."</h1><h2 class='text-justify text-center w-75 mx-auto'>" . $row["description"] . "<br>Ulica: " . $row["street"] . "<br>Cena: ". $row["price"] . "zł<br>Ilość: " . $row["left"] . "</h2></div>";
+                echo "<div class=''><h1 class='text-center'>".$row["name"]."</h1><h2 class='text-justify text-center w-75 mx-auto'>" . $row["description"] . "<br>Ulica: " . $row["street"] . "<br>Cena: ". $row["price"] . "zł<br>Ilość pozostałych mieszkań: " . $row["left"] . "</h2></div>";
             }
         ?>
     </main>
