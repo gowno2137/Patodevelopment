@@ -75,7 +75,7 @@
                         </p>
                     </div>
                     <div class="card-footer text-center border-top-0">
-                        <button class="btn btn-primary btn-hidden">Wybierz Kreator</button>
+                        <a href="kreator.php" class="btn btn-primary btn-hidden">Wybierz Kreator</a>
                     </div>
                 </div>
             </div>
