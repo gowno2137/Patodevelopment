@@ -26,29 +26,12 @@
 
     <form method="post" class="row g-3">
       <div class="col-md-4">
-<<<<<<< HEAD
-        <label for="validationDefault01" name="email" class="form-label">email</label>
-        <input type="text" class="form-control" id="email" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault02" naem="haslo" class="form-label">hasło</label>
-        <input type="password" class="form-control" id="haslo" required>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-=======
-        <label for="validationDefault01" class="form-label">email</label>
-        <input type="email" class="form-control" id="validationDefault01" name=email required="">
-      </div>
-      <div class="col-md-4">
         <label for="validationDefault02" class="form-label">hasło</label>
         <input type="password" class="form-control" id="validationDefault02" name="password" required="">
       </div>
       <div class="col-12">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" name="terms" required="">
->>>>>>> f5288f61be802952c467a51d83112456d1673c31
           <label class="form-check-label" for="invalidCheck2">
             Akceptuję regulamin firmy patodevelopment
           </label>
@@ -58,8 +41,6 @@
         <button class="btn btn-primary" type="submit">Zaloguj się</button>
       </div>
     </form>
-<<<<<<< HEAD
-=======
     <script>
 
     </script>
@@ -85,6 +66,5 @@
             }
         }
     ?>
->>>>>>> f5288f61be802952c467a51d83112456d1673c31
 </body>
 </html>
