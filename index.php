@@ -63,7 +63,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nowoczesne apartamenty</h5>
                     <p>Styl i komfort w sercu miasta.</p>
-                    <button type="button" class="btn btn-warning">Kup dzielnice za jedyne 195.000zł</button>
+                    <a class="btn btn-warning" href="kupMieszkanie.php" >Kup dzielnice za jedyne 195.000zł</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -71,7 +71,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Przytulne przestrzenie</h5>
                     <p>Doskonałe miejsce do życia i relaksu.</p>
-                    <button type="button" class="btn btn-warning">jedno mieszkanie 1m^2 za 250.000zł</button>
+                    <a class="btn btn-warning" href="kupMieszkanie.php">jedno mieszkanie 1m^2 za 250.000zł</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -91,13 +91,13 @@
             <span class="visually-hidden">Następny</span>
         </button>
     </div>
-    <div class="text-center m-3"><h1>Zamów swoje nowe wymarzone mieszkanie z dostawą pod drzwi</h1><button class="btn btn-primary">Kup mieszkanie -10%</button></div>
+    <div class="text-center m-3"><h1>Zamów swoje nowe wymarzone mieszkanie z dostawą pod drzwi</h1><a class="btn btn-primary" href="kupMieszkanie.php">Kup mieszkanie -10%</a></div>
     
     <div class="container bg-secondary-subtle p-3 rounded-4 text-center fs-5 text"><h5>Najnowsze informacje</h5>
     <br><p>Sprzedaliśmy cały blok milionerowi za 5 milionów złotych</p>
     <br><p>Kupiliśmy nową kamiennice w lipinach(nowe mieszkania nadchodzą)</p>
     <br><p>Wyprzedarz domów na terenach zalewowych!!!</p>
-    </div>
-    <img src="Patodevelopment1.png" alt="pato">
+    </div><br>
+    <footer class=" bg-secondary-subtle p-3 rounded-4 text-center fs-5">Antoni, Patryk, Szymon &copy 2024</footer>
 </body>
 </html>

@@ -54,7 +54,7 @@
     </div>
     </nav>
     <header class="text-center my-4">
-        <h1>Loteria Lootbox</h1>
+        <h1>Loteria</h1>
     </header>
     <div class="text-center">
         <button id="startLottery" class="btn btn-primary" onclick="">Weź udział</button>
@@ -132,6 +132,7 @@
         
     }
     </script>
+        <h1 class="text-center">Zgadnij liczbę</h1>
         <form method="post" class="text-center">
         Wybierz cyfre od 0-9: <input type="number" name="cyfra" placeholder="cyfra od 0-9" max=9>
         <input type="submit" value="strzelaj">
