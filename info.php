@@ -9,6 +9,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+<style>
+        @keyframes blink {
+            0% { background-color: red; }
+            50% { background-color: transparent; }
+            100% { background-color: red; }
+        }
+
+        .blinking-button {
+            animation: blink 1s infinite;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid red;
+            background-color: transparent;
+        }
+    </style>
     <main class="d-flex align-items-center">
         <?php
             $db_id = mysqli_connect("localhost", "root", "", "patodevelopment");
@@ -52,10 +68,11 @@
                 echo "<img class='w-50' src='zdj/".$row["photo"].".png'>";
                 echo "<div class=''><h1 class='text-center'>".$row["name"]."</h1><h2 class='text-justify text-center w-75 mx-auto'>" . $row["description"] . "<br>Ulica: " . $row["street"] . "<br>Cena: ". $row["price"] . "zł<br>Ilość pozostałych mieszkań: " . $row["left"] . "</h2></div>";
             }
-        ?>
+        ?>    
+
     </main>
-    <form method="post">
-        <input class="btn btn-primary w-25" type="submit" value="KUP">
+        <form action="" method="POST">
+        <input class="btn blinking-button w-50" type="submit" value="KUP">
     </form>
 </body>
 </html>
