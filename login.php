@@ -27,7 +27,7 @@
     <form method="post" class="row g-3">
     <div class="col-md-4">
         <label for="validationDefault01" name="email" class="form-label">email</label>
-        <input type="text" class="form-control" id="email" required>
+        <input type="email" name="email" class="form-control" id="email" required>
       </div>
       <div class="col-md-4">
         <label for="validationDefault02" class="form-label">hasło</label>
