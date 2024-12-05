@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <style>
+        .przycisk{
+            height:200px;
+            margin-top: 20px;
+        }
+    </style>
     <main class="d-flex align-items-center">
         <?php
             $db_id = mysqli_connect("localhost", "root", "", "patodevelopment");
@@ -55,7 +61,7 @@
         ?>
     </main>
     <form method="post">
-        <input class="btn btn-primary w-25" type="submit" value="KUP">
+        <input class="btn btn-outline-warning w-50 przycisk" type="submit" value="KUP">
     </form>
 </body>
 </html>
