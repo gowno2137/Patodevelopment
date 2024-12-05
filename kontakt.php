@@ -46,15 +46,16 @@
         </div>
     </div>
     </nav>
-    <header><h1>Dane do pozwu</h1></header>
-    <div class="shadow p-3 bg-body-tertiary rounded text-center">
+    <div class="text-center">
+        <header><h1>Dane do pozwu</h1></header>
         <h3>Nazwa firmy: Patodevelopment</h3>
-        <h3>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</h3>
         <h3>Zarząd: Partyk, Anthony, Żymon</h3>
         <h3>NIP: 6263045919</h3>
         <h3>Regon: 520679377</h3>
-        <a href="mailto: patodevelopment@gowno.com">patodevelopment@gowno.com</a><br>
-        <a href="tel:+48213769420">+48 213 769 420</a>
+        <h3><a href="https://mail.google.com/mail/?view=cm&fs=1&to=patodevelopment@gmail.com">patodevelopment@gmail.com</a><br></h3>
+        <h3><a href="tel:+48213769420">+48 213 769 420</a></h3>
+        <h3>Adres: ul. ŚWIĘTEJ ELŻBIETY 1 41-905 BYTOM</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.8993244243024!2d18.869780193251408!3d50.347161952787594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47112d1e49eacd99%3A0xae7f3143cfe2061a!2zxZp3acSZdGVqIEVsxbxiaWV0eSAxLCA0MS05MDUgQnl0b20!5e1!3m2!1spl!2spl!4v1733346117419!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
 </html>

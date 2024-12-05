@@ -9,6 +9,9 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
     <style>
+        *{
+            margin: 0;
+        }
         #map {
             height: 100vh;
             margin: 0;
@@ -32,10 +35,33 @@
 
         L.marker([50.31352699555624, 18.903822679230792]).addTo(map)
             .bindPopup('Kup teraz')
-            .openPopup();
         
         L.marker([50.26338286152394, 18.85923236421741]).addTo(map)
-            .bindPopup('<a href="test.html">test</a>')
+            .bindPopup('<a href="info.php?name=135">Sala 135 Kopernikus</a>')
+
+        L.marker([50.30586116058635, 18.902791113477488]).addTo(map)
+            .bindPopup('<a href="info.php?name=krotka">Familok ul. Krótka</a>')
+            
+        L.marker([50.30784532483451, 18.903069961091056]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Wieczorka</a>')
+            
+        L.marker([50.30891417312503, 18.90149160238576]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Okrzei</a>')
+            
+        L.marker([50.30148353762726, 18.880770367331646]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Plac szkolny</a>')
+            
+        L.marker([50.336632321341966, 18.868470297059964]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Bolesława Krzywoustego</a>')
+            
+        L.marker([50.33849950470168, 18.8711629767249]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Baczyńskiego</a>')
+            
+        L.marker([50.34825269843248, 18.932269520599686]).addTo(map)
+            .bindPopup('<a href="info.php">Familok ul. Floriańska</a>')
+            
+        L.marker([50.3479181384823, 18.936111326093815]).addTo(map)
+            .bindPopup('<a href="info.php">Warsztaty naprawcze GKW</a>')
             .openPopup();
     
         // var popup = L.popup()

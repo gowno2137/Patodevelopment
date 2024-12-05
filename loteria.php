@@ -133,7 +133,7 @@
     }
     </script>
         <form method="post" class="text-center">
-        Wybierz cyfre od 0-10: <input type="number" name="cyfra" placeholder="cyfra od 0-9" max=10>
+        Wybierz cyfre od 0-9: <input type="number" name="cyfra" placeholder="cyfra od 0-9" max=9>
         <input type="submit" value="strzelaj">
         <?php
         if(!empty($_POST["cyfra"])){

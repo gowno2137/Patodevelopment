@@ -89,7 +89,7 @@
                         </p>
                     </div>
                     <div class="card-footer text-center border-top-0">
-                        <button class="btn btn-success btn-hidden">Kup Gotowe</button>
+                        <a href="mieszkagotowiec.html" class="btn btn-success btn-hidden">Kup Gotowe</a>
                     </div>
                 </div>
             </div>
