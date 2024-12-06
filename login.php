@@ -63,7 +63,7 @@
                 $row = mysqli_fetch_assoc($result);
                 if (password_verify($password, $row["password"])) {
                     $_SESSION["email"] = $email;
-                    echo $_SESSION["url"];
+                    $_SESSION["id"] = $row["id"];
                     header('Location: '. $_SESSION["url"]);
                     exit;
                 }
